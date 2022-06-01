@@ -1,5 +1,42 @@
-dbt-postgres==0.21.0
-prefect[github]==0.15.9
-pandas==1.3.3
-pygit2==1.7.0
-SQLAlchemy==1.4.25
+Loren Woodpeckers vs Beerhelm Brawlers
+
+Woodpeckers Win
+SCORE 2-1  
+
+WOODPECKERS RESULTS:
+Journeyman (Did not retain) - DEAD
+#4 Caused Casualty (+2spp)
+#10 TD, MVP (+7 spp)
+#12 MNG 
+
+BRAWLERS RESULTS: 
+#4 Caused Casualty (+2 spp), MNG
+#7 Caused Casualty (+2 spp)
+#8 2x Completed Pass (+2 spp)
+#9 TD, Completed Pass (+4 spp)
+#11 MNG-NI (fouled)
+#12 MVP 
+
+
+WOODPECKERS ADVANCMENTS:
+#10 – takes PRO random second advancement for 4spp 
+
+BRAWLERS ADVANCEMENTS:
+#9 – chooses BLOCK first advancement for 6spp  
+
+WINNINGS: 
+Woodpeckers: 80k
+Brawlers: 70k
+
+DEDICATED FANS: 
+Woodpeckers +1 
+Brawlers: -1
+
+Purchases:  
+Brawlers purchase a Norse Berserker for 90k
+
+
+
+NOTE: Brawlers Treasures should have been 40k before the game as they purchased a Berserker after previous game. 
+
+

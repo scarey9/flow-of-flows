@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "flow-of-flows"
+version = "0.1.0"
+description = "prefect flow walkthrough"
+authors = ["Your Name <you@example.com>"]
+license = "n"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dbt-postgres = "^1.1.0"
+prefect = "^1.2.1"
+pandas = "^1.4.2"
+pygit2 = "^1.9.1"
+SQLAlchemy = "^1.4.36"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
