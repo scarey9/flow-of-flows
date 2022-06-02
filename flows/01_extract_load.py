@@ -19,7 +19,7 @@ def get_db_connection_string() -> str:
 def get_df_from_sql_query(table_or_query: str) -> pd.DataFrame:
     db = get_db_connection_string()
     engine = create_engine(db)
-    return pd.read_sql(table_or_query, engine)
+    return pd.read_sql(table_or_query, engine) 
 
 
 def load_df_to_db(df: pd.DataFrame, table_name: str, schema: str = "jaffle_shop") -> None:
@@ -59,5 +59,5 @@ with Flow(
     storage=STORAGE,
     run_config=LocalRun(labels=["dev"]),
 ) as flow:
-    datasets = ["raw_customers", "raw_orders", "raw_payments"]
+    datasets = [ "raw_customers", "raw_orders", "raw_payments"]
     dataframes = extract_and_load.map(datasets)  
