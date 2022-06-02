@@ -27,3 +27,6 @@ def load_df_to_db(df: pd.DataFrame, table_name: str, schema: str = "jaffle_shop"
     conn.execute(f"DROP TABLE IF EXISTS {schema}.{table_name} CASCADE;")
     df.to_sql(table_name, schema=schema, con=db_engine, index=False)
     conn.close()
+
+if __name__ == '__main__':
+    pass

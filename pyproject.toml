@@ -8,12 +8,16 @@ license = "n"
 [tool.poetry.dependencies]
 python = "^3.9"
 dbt-postgres = "^1.1.0"
-prefect = "^1.2.1"
 pandas = "^1.4.2"
 pygit2 = "^1.9.1"
 SQLAlchemy = "^1.4.36"
+PyGithub = "^1.55"
+prefect = {extras = ["github"], version = "^1.2.2"}
 
 [tool.poetry.dev-dependencies]
+ipykernel = "^6.13.0"
+
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

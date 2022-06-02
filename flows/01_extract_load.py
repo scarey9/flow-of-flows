@@ -1,17 +1,19 @@
-from flow_utilities.db_utils import load_df_to_db
+from db_utils import load_df_to_db
 import pandas as pd
 import prefect
 from prefect import task, Flow
 from prefect.executors import LocalDaskExecutor
 from prefect.run_configs import LocalRun
 from prefect.storage import GitHub
+from prefect.client import Secret
+from prefect.tasks.secrets import PrefectSecret
 
 
 FLOW_NAME = "01_extract_load"
 STORAGE = GitHub(
-    repo="anna-geller/flow-of-flows",
+    repo="scarey9/flow-of-flows",
     path=f"flows/{FLOW_NAME}.py",
-    access_token_secret="GITHUB_ACCESS_TOKEN",
+    access_token_secret=PrefectSecret("GITHUB_TOKEN"),
 )
 
 
